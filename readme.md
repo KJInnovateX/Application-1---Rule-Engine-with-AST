@@ -109,11 +109,3 @@ python -m unittest discover tests
 ```
 
 ---
-
-### Summary of Changes Made:
-1. Improved formatting with code blocks for commands and JSON for better readability.
-2. Added more explicit instructions for activating the virtual environment.
-3. Clarified the step-by-step process in the "Build and Install" section.
-4. Used bullet points and indentation for better organization in the "Project Structure" and "Design Choices" sections.
-
-Feel free to adjust any specific wording or formatting according to your preferences!
