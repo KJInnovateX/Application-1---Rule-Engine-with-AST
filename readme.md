@@ -1,5 +1,8 @@
-# Rule Engine Application by Karan Jadhav
-Live DEMO - https://rule-engine-with-ast-zdd5.onrender.com/
+# Application 1 : Rule Engine with AST
+### By : Karan Jadhav
+Live DEMO - https://rule-engine-with-ast-zdd5.onrender.com/ 
+
+GitHub Repository - https://github.com/KJInnovateX/Application-1---Rule-Engine-with-AST
 
 ## Overview
 This is a simple 3-tier rule engine application that determines user eligibility based on attributes like age, department, income, and spend. The system uses an Abstract Syntax Tree (AST) to represent conditional rules and allows for dynamic creation, combination, and modification of these rules.
@@ -52,6 +55,9 @@ project_root/
     ```bash
     python -m venv venv
     ```
+
+
+    
 
 2. Activate the virtual environment:
     - On Windows:
