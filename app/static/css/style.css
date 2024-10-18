@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1c1f2b;
+    color: #eaeaea;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #242837;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1, h3 {
+    text-align: center;
+    color: #ff6b6b; /* Coral color */
+    text-shadow: 2px 2px 4px #000;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.form-col {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #9f9f9f;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 6px;
+    font-size: 14px;
+    resize: vertical;
+    box-sizing: border-box;
+    background-color: #2f3444;
+    color: #ffffff;
+    transition: border 0.3s, background-color 0.3s;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border: 1px solid #20c997; /* Teal border on focus */
+    background-color: #3a3f54;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #6a4c93; /* Purple accent */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #815ac1; /* Lighter purple on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.result-section {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.result-true {
+    background-color: #20c997; /* Teal success */
+    border: 1px solid #20c997;
+    color: #ffffff;
+}
+
+.result-false {
+    background-color: #ff6b6b; /* Coral error */
+    border: 1px solid #ff6b6b;
+    color: #ffffff;
+}
+
+#created-rule-text {
+    margin-top: 10px;
+    font-style: italic;
+    color: #b0b0b0;
+    transition: color 0.3s ease;
+}
+
+#created-rule-text:not(:empty) {
+    color: #ff6b6b; /* Coral for created rule */
+}

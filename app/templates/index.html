@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Rule Engine</h1>
+        <h3>Created By Karan Jadhav</h3>
+
+        <!-- Create Rule Section -->
+        <form id="create-rule-form" class="form-section">
+            <label for="rule">Create Rule:</label>
+            <input type="text" id="rule" name="rule" required>
+            <button type="submit">Create Rule</button>
+        </form>
+
+        <!-- Reset Rules Button -->
+        <button id="reset-rules" class="reset-button">Reset All Rules</button>
+
+        <!-- Display the Created Rule -->
+        <div id="display-rule" class="display-rule">
+            <h2>Created Rule</h2>
+            <p id="created-rule-text">No rule created yet.</p>
+        </div>
+
+        <!-- Evaluate Rule Section -->
+        <form id="evaluate-rule-form" class="form-section">
+            <div class="form-row">
+                <div class="form-col">
+                    <label for="ast">AST (JSON format):</label>
+                    <textarea id="ast" name="ast" required></textarea>
+                </div>
+                <div class="form-col">
+                    <label for="data">Data (JSON format):</label>
+                    <textarea id="data" name="data" required></textarea>
+                </div>
+            </div>
+            <button type="submit">Evaluate Rule</button>
+        </form>
+
+        <div id="result" class="result-section"></div>
+    </div>
+   
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
